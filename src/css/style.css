@@ -1,0 +1,891 @@
+/* Style slider */
+/* Slideshow container */
+.wrap {
+  position: relative; }
+
+/* Next & previous buttons */
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  color: white;
+  font-size: 18px; }
+
+#arrow-left {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid white; }
+
+#arrow-right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute; }
+
+/* Slide text */
+.slide-content {
+  position: absolute;
+  color: white;
+  font-weight: bold; }
+
+/* Book button */
+.book-now-btn {
+  position: absolute; }
+  .book-now-btn button {
+    background-color: #002f9d;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; }
+
+.slide1,
+.slide3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.slide1 {
+  width: 100%;
+  background-image: url(../images/imgs_tm/background_img1.jpg); }
+
+.slide2 {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-image: url(../images/imgs_tm/background_img2.jpg); }
+
+.slide3 {
+  width: 100%;
+  background-image: url(../images/imgs_tm/background_img3.jpg); }
+
+@media only screen and (max-width: 600px) {
+  .slide1,
+  .slide2,
+  .slide3 {
+    height: 265px; }
+  /* Next & previous buttons */
+  .arrow {
+    top: 310px;
+    padding: 8px; }
+  #arrow-left {
+    right: 76px; }
+  #arrow-right {
+    right: 27px; }
+  /* Slide text */
+  .slide-content {
+    top: 60px;
+    left: 20px; }
+  .summer-deals {
+    font-size: 28px; }
+  .costs {
+    font-size: 13px; }
+  /* Book button */
+  .book-now-btn {
+    top: 140px;
+    left: 20px; }
+    .book-now-btn button {
+      padding: 10px 20px; } }
+
+@media only screen and (min-width: 600px) {
+  .slide1,
+  .slide2,
+  .slide3 {
+    height: 400px; }
+  /* Next & previous buttons */
+  .arrow {
+    top: 285px;
+    padding: 10px; }
+  #arrow-left {
+    right: 76px; }
+  #arrow-right {
+    right: 27px; }
+  /* Slide text */
+  .slide-content {
+    top: 112px;
+    left: 20px;
+    line-height: 1.3; }
+  .summer-deals {
+    font-size: 30px; }
+  .costs {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 8%; }
+  /* Book button */
+  .book-now-btn {
+    top: 240px;
+    left: 20px; }
+    .book-now-btn button {
+      padding: 15px 30px;
+      font-size: 16px; } }
+
+@media only screen and (min-width: 768px) {
+  .slide1,
+  .slide2,
+  .slide3 {
+    height: 400px; }
+  /* Slide text */
+  .slide-content {
+    top: 110px;
+    left: 130px;
+    line-height: 1.2; }
+  /* Next & previous buttons */
+  .arrow {
+    top: 300px; }
+  #arrow-left {
+    right: 150px; }
+  #arrow-right {
+    right: 90px; }
+  /* Book button */
+  .book-now-btn {
+    top: 220px;
+    left: 130px; }
+    .book-now-btn button {
+      padding: 14px 22px; } }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i,
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+/* Style header */
+.main-header {
+  margin: 3% 5% 0 5%;
+  display: grid;
+  grid-template-columns: auto auto; }
+
+.login-btn {
+  border: none;
+  background-color: white;
+  padding: 0;
+  align-self: start;
+  color: #021f59;
+  text-transform: uppercase;
+  text-decoration-line: none; }
+
+/* Style article low cost */
+.low-cost {
+  text-transform: uppercase;
+  text-align: center;
+  color: #666666; }
+
+.fly-smart > h1 {
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 10%;
+  color: #002f9d;
+  font-weight: bold; }
+
+/* Seats shoes cabin smile img */
+.seat-img img,
+.shoe-img img,
+.cabin-img img,
+.smile-img img {
+  border: 4px solid #f2f2f2;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 11%; }
+
+/* Article where to go */
+.where-to-go {
+  text-align: center;
+  color: #002f9d; }
+
+.inspire {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-style: dashed; }
+
+/* Article travel the way you want */
+.inside-quality {
+  padding: 5%;
+  background-color: #021f59; }
+
+.travel-the-way-you-want {
+  text-align: center; }
+  .travel-the-way-you-want h1 {
+    font-size: 32px;
+    color: #38bdff;
+    font-weight: bold; }
+
+.quality {
+  line-height: 2.5;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px; }
+
+.travel-text {
+  color: white;
+  font-size: 14px; }
+
+.services {
+  line-height: 2.5;
+  color: #38bdff;
+  font-size: 18px;
+  text-decoration: underline;
+  text-decoration-style: dashed; }
+
+/* Style subscribe */
+.subscribe {
+  background-color: #002f9d; }
+  .subscribe h2 {
+    color: white; }
+
+.email {
+  border-bottom: 1px solid white; }
+  .email input {
+    border: none;
+    outline: none;
+    background-color: #002f9d;
+    color: #38bdff; }
+
+.send {
+  border: none;
+  outline: none; }
+
+@media only screen and (max-width: 600px) {
+  /* Style header */
+  .logo > img {
+    height: 50px; }
+  .login {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: end; }
+    .login p {
+      color: #021f59; }
+  .line {
+    height: 15px; }
+  .flag {
+    height: 15px; }
+  .en-uk {
+    display: none; }
+  /* Navigation */
+  .navigation > nav {
+    margin-right: 5%;
+    margin-bottom: 5%; }
+    .navigation > nav ul {
+      display: grid;
+      grid-template-columns: auto 100px 90px;
+      text-align: end; }
+  .li-btn {
+    color: #002f9d;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration-line: none; }
+  /* Style article low cost */
+  .fly-smart h1 span {
+    display: block; }
+  .seats,
+  .shoes,
+  .cabins,
+  .smiles {
+    display: grid;
+    grid-template-columns: 35% auto;
+    margin-bottom: 5%; }
+  .seat-img,
+  .shoe-img,
+  .cabin-img,
+  .smile-img {
+    margin-left: 15%; }
+  .reclinable-seats,
+  .plenty-of-legroom,
+  .free-cabin-luggage,
+  .friendly-crew {
+    padding-right: 4%;
+    color: #021f59; }
+    .reclinable-seats h3,
+    .plenty-of-legroom h3,
+    .free-cabin-luggage h3,
+    .friendly-crew h3 {
+      line-height: 1.7;
+      font-size: 24px; }
+    .reclinable-seats p,
+    .plenty-of-legroom p,
+    .free-cabin-luggage p,
+    .friendly-crew p {
+      font-size: 18px; }
+  /* Card container */
+  .card-container {
+    background-color: #002f9d;
+    padding-bottom: 1%; }
+  .card {
+    padding: 0 8%;
+    margin-bottom: 10%;
+    position: relative; }
+  .card-title h3 span {
+    display: block; }
+  .card-title {
+    padding: 10%; }
+    .card-title h3 {
+      font-size: 32px;
+      color: white;
+      text-align: center;
+      line-height: 1.055; }
+  ._3h-rate {
+    position: absolute;
+    top: 23px;
+    padding: 5px;
+    background-color: #ffed28;
+    left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #002f9d; }
+  .card-thumbnail > img {
+    width: 100%; }
+  .card-description {
+    background-color: white;
+    padding: 6% 0 2% 6%; }
+    .card-description a {
+      line-height: 3;
+      font-size: 30px;
+      text-decoration-line: none;
+      color: #002f9d;
+      font-weight: bold; }
+  .city {
+    font-size: 24px;
+    color: #021f59;
+    font-weight: bold;
+    line-height: 1; }
+  .money {
+    font-size: 24px;
+    color: #021f59;
+    line-height: 0.834; }
+  /* Article where to go */
+  .where-to-go {
+    padding: 6%;
+    line-height: 1.8;
+    font-size: 24px; }
+  /* Article travel the way you want */
+  .travel-the-way-you-want h1 span {
+    display: block;
+    padding-bottom: 5%; }
+  /* Travel cards */
+  .tabs {
+    display: none; }
+  .one-travel-card {
+    background-color: white;
+    margin-top: 10%;
+    border-top: 10px solid #002f9d; }
+    .one-travel-card img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin-top: 5%; }
+  .travel-img {
+    text-align: center;
+    line-height: 3; }
+  .travel-container {
+    line-height: 2.5;
+    padding-bottom: 3%; }
+    .travel-container h4 {
+      text-align: center;
+      font-weight: bold;
+      color: #002f9d;
+      font-size: 20px; }
+  .travel-upgrades,
+  .extra {
+    padding-left: 10%; }
+  .check-mark {
+    color: #021f59; }
+  .dollar-sign {
+    color: #e5e5e5; }
+  /* Style subscribe */
+  .subscribe-follow-us {
+    display: none; }
+  .subscribe {
+    padding: 15% 5%; }
+    .subscribe h2 {
+      text-align: center;
+      margin-bottom: 10%;
+      font-size: 22px; }
+  .email {
+    margin-bottom: 7%; }
+    .email input {
+      font-size: 18px;
+      padding-bottom: 5%; }
+  .send {
+    width: 100%;
+    font-size: 20px;
+    padding: 4%;
+    color: #002f9d;
+    background-color: white;
+    font-weight: bold; }
+  /* Style footer */
+  .follow-us {
+    padding: 5%;
+    text-align: center;
+    line-height: 3;
+    border-bottom: 10px solid #38bdff; }
+    .follow-us h2 {
+      font-size: 20px;
+      color: #002f9d;
+      font-weight: bold; }
+  .social-media a {
+    text-decoration-line: none; }
+  .social-media img {
+    padding: 0 5%;
+    height: 24px; }
+  .payment img {
+    padding: 0 5%;
+    height: 17px; }
+  .terms {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #666666; } }
+
+@media only screen and (min-width: 600px) {
+  /* Style header */
+  .login {
+    display: grid;
+    grid-template-columns: 50px 35px 40px 50px 20px;
+    justify-content: end; }
+    .login p {
+      color: #021f59;
+      text-transform: uppercase;
+      place-self: center; }
+  .login-btn {
+    place-self: center; }
+  .line {
+    height: 15px;
+    place-self: center; }
+  .flag {
+    height: 15px;
+    place-self: center; }
+  /* Navigation */
+  .navigation {
+    position: relative;
+    margin-bottom: 2%; }
+    .navigation nav {
+      position: absolute;
+      bottom: 32px;
+      left: 150px; }
+    .navigation ul {
+      display: grid;
+      grid-template-columns: 50px 90px 60px; }
+  .li-btn {
+    color: #002f9d;
+    text-decoration-line: none; }
+  /* Style article low cost */
+  .main-article {
+    margin-bottom: 5%; }
+  .container-low-cost {
+    display: grid;
+    grid-template-columns: auto auto; }
+  .seats,
+  .shoes,
+  .cabins,
+  .smiles {
+    display: grid;
+    grid-template-columns: 35% auto;
+    margin-bottom: 5%; }
+  .seat-img,
+  .shoe-img,
+  .cabin-img,
+  .smile-img {
+    margin-left: 20%; }
+  .reclinable-seats,
+  .plenty-of-legroom,
+  .free-cabin-luggage,
+  .friendly-crew {
+    padding-right: 5%;
+    color: #021f59; }
+    .reclinable-seats h3,
+    .plenty-of-legroom h3,
+    .free-cabin-luggage h3,
+    .friendly-crew h3 {
+      line-height: 1.7;
+      font-size: 18px; }
+    .reclinable-seats p,
+    .plenty-of-legroom p,
+    .free-cabin-luggage p,
+    .friendly-crew p {
+      font-size: 13px; }
+  /* Card container */
+  .card-container {
+    background-color: #002f9d;
+    padding-bottom: 5%; }
+  .card {
+    padding: 0 3%;
+    margin-bottom: 7%;
+    position: relative; }
+  .card-title {
+    padding: 9% 1% 5% 1%; }
+    .card-title h3 {
+      font-size: 19px;
+      color: white; }
+  ._3h-rate {
+    position: absolute;
+    top: 23px;
+    padding: 5px;
+    background-color: #ffed28;
+    left: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #002f9d; }
+  .all-cards {
+    display: grid;
+    grid-template-columns: auto auto; }
+  .card-thumbnail > img {
+    width: 100%;
+    height: 245px; }
+  .card-description {
+    background-color: white;
+    padding: 6% 0 2% 6%; }
+    .card-description a {
+      line-height: 3;
+      font-size: 30px;
+      text-decoration-line: none;
+      color: #002f9d;
+      font-weight: bold; }
+  .city {
+    font-size: 24px;
+    color: #021f59;
+    font-weight: bold;
+    line-height: 1; }
+  .money {
+    font-size: 24px;
+    color: #021f59;
+    line-height: 0.834; }
+  /* Article where to go */
+  .where-to-go {
+    padding: 7%;
+    text-align: center;
+    font-size: 22px; }
+  .go-where {
+    display: inline; }
+  .inspire {
+    display: inline; }
+  /* Article travel the way you want */
+  .travel-the-way-you-want h1 {
+    line-height: 2.5; }
+  .services {
+    text-align: right; }
+  /* Travel tabs */
+  .travel-cards {
+    display: none; }
+  .tabs {
+    position: relative;
+    min-height: 200px;
+    clear: both;
+    margin: 25px 0; }
+  .tab {
+    float: left; }
+  .tab label {
+    background: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    color: #666666;
+    font-weight: bold;
+    cursor: pointer; }
+  .tab [type="radio"] {
+    display: none; }
+  .one-travel-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: white;
+    right: 0;
+    padding: 20px; }
+  [type="radio"]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+    color: #002f9d;
+    border-top: 2px solid #38bdff; }
+  [type="radio"]:checked ~ label ~ .one-travel-card {
+    z-index: 1; }
+  .travel-img {
+    place-self: center; }
+    .travel-img img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%; }
+  .travel-cards {
+    background-color: white; }
+  .travel-container {
+    display: grid;
+    grid-template-columns: auto auto; }
+    .travel-container h4 {
+      display: none; }
+  .travel-upgrades {
+    place-self: center;
+    color: #021f59; }
+  .extra {
+    place-self: center;
+    color: #e5e5e5; }
+  /* Style subscribe */
+  .subscribe-follow-us {
+    display: none; }
+  .subscribe {
+    padding: 5% 15%; }
+    .subscribe h2 {
+      text-align: center;
+      margin-bottom: 10%;
+      font-size: 25px; }
+  .email {
+    margin-bottom: 7%; }
+    .email input {
+      font-size: 16px;
+      padding-bottom: 2%; }
+  .send {
+    width: 60%;
+    font-size: 20px;
+    padding: 2%;
+    color: #002f9d;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    font-weight: bold; }
+  /* Style footer */
+  .follow-us {
+    padding: 5%;
+    text-align: center;
+    line-height: 3;
+    border-bottom: 10px solid #38bdff; }
+    .follow-us h2 {
+      font-size: 35px;
+      color: #002f9d;
+      font-weight: normal; }
+  .social-media a {
+    text-decoration-line: none; }
+  .social-media img {
+    padding: 0 4%;
+    height: 30px; }
+  .payment img {
+    padding: 0 4%;
+    height: 32px; }
+  .terms {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #666666;
+    font-size: 18px; } }
+
+@media only screen and (min-width: 768px) {
+  /* Style header */
+  .logo > img {
+    width: 55px; }
+  /* Navigation */
+  .navigation {
+    margin-bottom: 1%; }
+    .navigation nav {
+      bottom: 25px; }
+  /* Style article low cost */
+  .main-article {
+    margin-bottom: 3%; }
+  .container-low-cost {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 10%; }
+  .low-cost {
+    margin: 20px 0 10px 0; }
+  .fly-smart > h1 {
+    font-size: 42px;
+    margin-bottom: 5%; }
+  .seats,
+  .shoes,
+  .cabins,
+  .smiles {
+    display: grid;
+    grid-template-columns: 35% 80%;
+    margin-bottom: 5%; }
+  .seat-img,
+  .shoe-img,
+  .cabin-img,
+  .smile-img {
+    place-self: center; }
+    .seat-img img,
+    .shoe-img img,
+    .cabin-img img,
+    .smile-img img {
+      width: 40px;
+      height: 40px;
+      padding: 10%; }
+  .reclinable-seats,
+  .plenty-of-legroom,
+  .free-cabin-luggage,
+  .friendly-crew {
+    color: #021f59;
+    padding-right: 20%; }
+    .reclinable-seats h3,
+    .plenty-of-legroom h3,
+    .free-cabin-luggage h3,
+    .friendly-crew h3 {
+      line-height: 1.7;
+      font-size: 20px; }
+    .reclinable-seats p,
+    .plenty-of-legroom p,
+    .free-cabin-luggage p,
+    .friendly-crew p {
+      font-size: 15px; }
+  /* Card container */
+  .card-container {
+    background-color: #002f9d;
+    padding: 0 10% 5% 10%; }
+  .card {
+    padding: 0 3%;
+    position: relative; }
+  .card-title {
+    padding-bottom: 3%; }
+    .card-title h3 {
+      font-size: 15px;
+      color: white; }
+  ._3h-rate {
+    position: absolute;
+    top: 23px;
+    padding: 5px;
+    background-color: #ffed28;
+    left: -5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #002f9d; }
+  .all-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto; }
+  .card-thumbnail > img {
+    width: 100%;
+    height: 145px; }
+  .card-description {
+    background-color: white;
+    padding: 8% 0 2% 10%; }
+    .card-description a {
+      line-height: 3;
+      font-size: 17px;
+      text-decoration-line: none;
+      color: #002f9d;
+      font-weight: bold; }
+  .city {
+    font-size: 15px;
+    color: #021f59;
+    font-weight: bold;
+    line-height: 1; }
+  .money {
+    font-size: 15px;
+    color: #021f59;
+    line-height: 0.834; }
+  /* Article where to go */
+  .where-to-go {
+    padding: 3%; }
+  /* Article travel the way you want */
+  .inside-quality {
+    padding: 5% 15%; }
+  .quality {
+    font-size: 13px;
+    line-height: 0; }
+  .travel-text {
+    font-size: 14px;
+    padding: 3% 10%; }
+  .services {
+    font-size: 16px; }
+  /* Style subscribe */
+  .subscribe {
+    padding: 3% 0;
+    display: grid;
+    grid-template-columns: 35% 40% auto; }
+    .subscribe h2 {
+      font-size: 17px;
+      text-align: left;
+      margin-bottom: 0;
+      place-self: center; }
+  .email {
+    margin-bottom: 0;
+    display: inline; }
+    .email input {
+      padding-bottom: 0;
+      font-size: 14px;
+      width: 60%; }
+  .send {
+    font-size: 15px;
+    padding: 0;
+    color: white;
+    background-color: #002f9d;
+    margin: 0 auto;
+    font-weight: normal;
+    display: inline;
+    width: 17%;
+    cursor: pointer; }
+  .subscribe-follow-us {
+    display: inherit;
+    place-self: center; }
+  .subscribe-social-media {
+    display: -webkit-inline-box;
+    place-self: center;
+    width: 100%; }
+    .subscribe-social-media a {
+      text-decoration-line: none; }
+    .subscribe-social-media img {
+      padding-right: 15px;
+      height: 17px; }
+    .subscribe-social-media p {
+      padding-right: 8%;
+      color: white; }
+  /* Style footer */
+  .follow-us {
+    padding: 2%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    border-bottom: 10px solid #38bdff; }
+    .follow-us h2 {
+      display: none; }
+  .social-media {
+    display: none; }
+  .payment {
+    align-self: center; }
+    .payment img {
+      padding: 0 2%;
+      height: 20px; }
+  .terms {
+    display: inherit;
+    color: #666666;
+    font-size: 18px;
+    place-self: end; }
+    .terms p {
+      padding: 0 7px; } }

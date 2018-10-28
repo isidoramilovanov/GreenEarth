@@ -1,0 +1,951 @@
+@import "variables";
+@import "sliderContainer";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i,
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, 
+section, summary, time, mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Style header */
+.main-header {
+  margin: 3% 5% 0 5%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.login-btn {
+  border: none;
+  background-color: $white;
+  padding: 0;
+  align-self: start;
+  color: $dark-blue;
+  text-transform: uppercase;
+  text-decoration-line: none;
+}
+
+/* Style article low cost */
+.low-cost {
+  text-transform: uppercase;
+  text-align: center;
+  color: $grey;
+}
+
+.fly-smart > h1 {
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 10%;
+  color: $blue;
+  font-weight: bold;
+}
+
+/* Seats shoes cabin smile img */
+.seat-img,
+.shoe-img,
+.cabin-img,
+.smile-img {
+  img {
+    border: 4px solid $light-grey;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 11%;
+  }
+}
+
+/* Article where to go */
+.where-to-go {
+  text-align: center;
+  color: $blue;
+}
+
+.inspire {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+/* Article travel the way you want */
+.inside-quality {
+  padding: 5%;
+  background-color: $dark-blue;
+}
+
+.travel-the-way-you-want {
+  text-align: center;
+  h1 {
+    font-size: 32px;
+    color: $light-blue;
+    font-weight: bold;
+  }
+}
+
+.quality {
+  line-height: 2.5;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 14px;
+}
+
+.travel-text {
+  color: $white;
+  font-size: 14px;
+}
+
+.services {
+  line-height: 2.5;
+  color: $light-blue;
+  font-size: 18px;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+/* Style subscribe */
+.subscribe {
+  background-color: $blue;
+
+  h2 {
+    color: $white;
+  }
+}
+
+.email {
+  border-bottom: 1px solid $white;
+
+  input {
+    border: none;
+    outline: none;
+    background-color: $blue;
+    color: $light-blue;
+  }
+}
+.send {
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Style header */
+  .logo > img {
+    height: 50px;
+  }
+  .login {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: end;
+    p {
+      color: $dark-blue;
+    }
+  }
+  .line {
+    height: 15px;
+  }
+  .flag {
+    height: 15px;
+  }
+  .en-uk {
+    display: none;
+  }
+  /* Navigation */
+  .navigation > nav {
+    margin-right: 5%;
+    margin-bottom: 5%;
+    ul {
+      display: grid;
+      grid-template-columns: auto 100px 90px;
+      text-align: end;
+    }
+  }
+  .li-btn {
+    color: $blue;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration-line: none;
+  }
+  /* Style article low cost */
+  .fly-smart {
+    h1 span {
+      display: block;
+    }
+  }
+  .seats,
+  .shoes,
+  .cabins,
+  .smiles {
+    display: grid;
+    grid-template-columns: 35% auto;
+    margin-bottom: 5%;
+  }
+  .seat-img,
+  .shoe-img,
+  .cabin-img,
+  .smile-img {
+    margin-left: 15%;
+  }
+  .reclinable-seats,
+  .plenty-of-legroom,
+  .free-cabin-luggage,
+  .friendly-crew {
+    padding-right: 4%;
+    color: $dark-blue;
+    h3 {
+      line-height: 1.7;
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  /* Card container */
+  .card-container {
+    background-color: $blue;
+    padding-bottom: 1%;
+  }
+  .card {
+    padding: 0 8%;
+    margin-bottom: 10%;
+    position: relative;
+  }
+  .card-title {
+    h3 span {
+      display: block;
+    }
+  }
+  .card-title {
+    padding: 10%;
+    h3 {
+      font-size: 32px;
+      color: $white;
+      text-align: center;
+      line-height: 1.055;
+    }
+  }
+  ._3h-rate {
+    position: absolute;
+    top: 23px;
+    padding: 5px;
+    background-color: rgb(255, 237, 40);
+    left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: $blue;
+  }
+  .card-thumbnail > img {
+    width: 100%;
+  }
+  .card-description {
+    background-color: $white;
+    padding: 6% 0 2% 6%;
+    a {
+      line-height: 3;
+      font-size: 30px;
+      text-decoration-line: none;
+      color: $blue;
+      font-weight: bold;
+    }
+  }
+  .city {
+    font-size: 24px;
+    color: $dark-blue;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .money {
+    font-size: 24px;
+    color: $dark-blue;
+    line-height: 0.834;
+  }
+  /* Article where to go */
+  .where-to-go {
+    padding: 6%;
+    line-height: 1.8;
+    font-size: 24px;
+  }
+  /* Article travel the way you want */
+  .travel-the-way-you-want {
+    h1 span {
+      display: block;
+      padding-bottom: 5%;
+    }
+  }
+  /* Travel cards */
+  .tabs {
+    display: none;
+  }
+  .one-travel-card {
+    background-color: $white;
+    margin-top: 10%;
+    border-top: 10px solid $blue;
+    img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin-top: 5%;
+    }
+  }
+  .travel-img {
+    text-align: center;
+    line-height: 3;
+  }
+  .travel-container {
+    line-height: 2.5;
+    padding-bottom: 3%;
+    h4 {
+      text-align: center;
+      font-weight: bold;
+      color: $blue;
+      font-size: 20px;
+    }
+  }
+  .travel-upgrades,
+  .extra {
+    padding-left: 10%;
+  }
+  .check-mark {
+    color: $dark-blue;
+  }
+  .dollar-sign {
+    color: $middle-grey;
+  }
+
+  /* Style subscribe */
+  .subscribe-follow-us {
+    display: none;
+  }
+  .subscribe {
+    padding: 15% 5%;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10%;
+      font-size: 22px;
+    }
+  }
+  .email {
+    margin-bottom: 7%;
+    input {
+      font-size: 18px;
+      padding-bottom: 5%;
+    }
+  }
+  .send {
+    width: 100%;
+    font-size: 20px;
+    padding: 4%;
+    color: $blue;
+    background-color: $white;
+    font-weight: bold;
+  }
+
+  /* Style footer */
+  .follow-us {
+    padding: 5%;
+    text-align: center;
+    line-height: 3;
+    border-bottom: 10px solid $light-blue;
+
+    h2 {
+      font-size: 20px;
+      color: $blue;
+      font-weight: bold;
+    }
+  }
+
+  .social-media {
+    a {
+      text-decoration-line: none;
+    }
+    img {
+      padding: 0 5%;
+      height: 24px;
+    }
+  }
+  .payment {
+    img {
+      padding: 0 5%;
+      height: 17px;
+    }
+  }
+
+  .terms {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: $grey;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* Style header */
+  .login {
+    display: grid;
+    grid-template-columns: 50px 35px 40px 50px 20px;
+    justify-content: end;
+    p {
+      color: $dark-blue;
+      text-transform: uppercase;
+      place-self: center;
+    }
+  }
+  .login-btn {
+    place-self: center;
+  }
+  .line {
+    height: 15px;
+    place-self: center;
+  }
+  .flag {
+    height: 15px;
+    place-self: center;
+  }
+  /* Navigation */
+  .navigation {
+    position: relative;
+    margin-bottom: 2%;
+    nav {
+      position: absolute;
+      bottom: 32px;
+      left: 150px;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: 50px 90px 60px;
+    }
+  }
+  .li-btn {
+    color: $blue;
+    text-decoration-line: none;
+  }
+  /* Style article low cost */
+  .main-article {
+    margin-bottom: 5%;
+  }
+  .container-low-cost {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .seats,
+  .shoes,
+  .cabins,
+  .smiles {
+    display: grid;
+    grid-template-columns: 35% auto;
+    margin-bottom: 5%;
+  }
+  .seat-img,
+  .shoe-img,
+  .cabin-img,
+  .smile-img {
+    margin-left: 20%;
+  }
+  .reclinable-seats,
+  .plenty-of-legroom,
+  .free-cabin-luggage,
+  .friendly-crew {
+    padding-right: 5%;
+    color: $dark-blue;
+    h3 {
+      line-height: 1.7;
+      font-size: 18px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  /* Card container */
+  .card-container {
+    background-color: $blue;
+    padding-bottom: 5%;
+  }
+  .card {
+    padding: 0 3%;
+    margin-bottom: 7%;
+    position: relative;
+  }
+  .card-title {
+    padding: 9% 1% 5% 1%;
+    h3 {
+      font-size: 19px;
+      color: $white;
+    }
+  }
+  ._3h-rate {
+    position: absolute;
+    top: 23px;
+    padding: 5px;
+    background-color: rgb(255, 237, 40);
+    left: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    color: $blue;
+  }
+  .all-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .card-thumbnail > img {
+    width: 100%;
+    height: 245px;
+  }
+  .card-description {
+    background-color: $white;
+    padding: 6% 0 2% 6%;
+    a {
+      line-height: 3;
+      font-size: 30px;
+      text-decoration-line: none;
+      color: $blue;
+      font-weight: bold;
+    }
+  }
+  .city {
+    font-size: 24px;
+    color: $dark-blue;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .money {
+    font-size: 24px;
+    color: $dark-blue;
+    line-height: 0.834;
+  }
+  /* Article where to go */
+  .where-to-go {
+    padding: 7%;
+    text-align: center;
+    font-size: 22px;
+  }
+  .go-where {
+    display: inline;
+  }
+  .inspire {
+    display: inline;
+  }
+  /* Article travel the way you want */
+  .travel-the-way-you-want {
+    h1 {
+      line-height: 2.5;
+    }
+  }
+  .services {
+    text-align: right;
+  }
+  /* Travel tabs */
+  .travel-cards {
+    display: none;
+  }
+  .tabs {
+    position: relative;
+    min-height: 200px;
+    clear: both;
+    margin: 25px 0;
+  }
+  .tab {
+    float: left;
+  }
+  .tab label {
+    background: $light-grey;
+    padding: 10px;
+    border: 1px solid $middle-grey;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    color: $grey;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .tab [type="radio"] {
+    display: none;
+  }
+  .one-travel-card {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: white;
+    right: 0;
+    padding: 20px;
+  }
+  [type="radio"]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+    color: $blue;
+    border-top: 2px solid $light-blue;
+  }
+  [type="radio"]:checked ~ label ~ .one-travel-card {
+    z-index: 1;
+  }
+  .travel-img {
+    place-self: center;
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+  }
+  .travel-cards {
+    background-color: $white;
+  }
+  .travel-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    h4 {
+      display: none;
+    }
+  }
+  .travel-upgrades {
+    place-self: center;
+    color: $dark-blue;
+  }
+  .extra {
+    place-self: center;
+    color: $middle-grey;
+  }
+
+  /* Style subscribe */
+  .subscribe-follow-us {
+    display: none;
+  }
+  .subscribe {
+    padding: 5% 15%;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10%;
+      font-size: 25px;
+    }
+  }
+  .email {
+    margin-bottom: 7%;
+    input {
+      font-size: 16px;
+      padding-bottom: 2%;
+    }
+  }
+  .send {
+    width: 60%;
+    font-size: 20px;
+    padding: 2%;
+    color: $blue;
+    background-color: $white;
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+  }
+
+  /* Style footer */
+  .follow-us {
+    padding: 5%;
+    text-align: center;
+    line-height: 3;
+    border-bottom: 10px solid $light-blue;
+
+    h2 {
+      font-size: 35px;
+      color: $blue;
+      font-weight: normal;
+    }
+  }
+
+  .social-media {
+    a {
+      text-decoration-line: none;
+    }
+    img {
+      padding: 0 4%;
+      height: 30px;
+    }
+  }
+  .payment {
+    img {
+      padding: 0 4%;
+      height: 32px;
+    }
+  }
+
+  .terms {
+    display: grid;
+    grid-template-columns: auto auto;
+    color: $grey;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style header */
+  .logo > img {
+    width: 55px;
+  }
+  /* Navigation */
+  .navigation {
+    margin-bottom: 1%;
+    
+    nav {
+    bottom: 25px;
+  }
+}
+  /* Style article low cost */
+  .main-article {
+    margin-bottom: 3%;
+  }
+  .container-low-cost {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 10%;
+  }
+  .low-cost {
+    margin: 20px 0 10px 0;
+  }
+  .fly-smart > h1 {
+    font-size: 42px;
+    margin-bottom: 5%;
+  }
+  .seats,
+  .shoes,
+  .cabins,
+  .smiles {
+    display: grid;
+    grid-template-columns: 35% 80%;
+    margin-bottom: 5%;
+  }
+  .seat-img,
+  .shoe-img,
+  .cabin-img,
+  .smile-img {
+    place-self: center;
+    img {
+      width: 40px;
+      height: 40px;
+      padding: 10%;
+    }
+  }
+  .reclinable-seats,
+  .plenty-of-legroom,
+  .free-cabin-luggage,
+  .friendly-crew {
+    color: $dark-blue;
+    padding-right: 20%;
+    h3 {
+      line-height: 1.7;
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  /* Card container */
+  .card-container {
+    background-color: $blue;
+    padding: 0 10% 5% 10%;
+  }
+  .card {
+    padding: 0 3%;
+    position: relative;
+  }
+  .card-title {
+    padding-bottom: 3%;
+    h3 {
+      font-size: 15px;
+      color: $white;
+    }
+  }
+  ._3h-rate {
+    position: absolute;
+    top: 23px;
+    padding: 5px;
+    background-color: rgb(255, 237, 40);
+    left: -5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: $blue;
+  }
+  .all-cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .card-thumbnail > img {
+    width: 100%;
+    height: 145px;
+  }
+  .card-description {
+    background-color: $white;
+    padding: 8% 0 2% 10%;
+    a {
+      line-height: 3;
+      font-size: 17px;
+      text-decoration-line: none;
+      color: $blue;
+      font-weight: bold;
+    }
+  }
+  .city {
+    font-size: 15px;
+    color: $dark-blue;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .money {
+    font-size: 15px;
+    color: $dark-blue;
+    line-height: 0.834;
+  }
+  /* Article where to go */
+  .where-to-go {
+    padding: 3%;
+  }
+  /* Article travel the way you want */
+  .inside-quality {
+    padding: 5% 15%;
+  }
+  .quality {
+    font-size: 13px;
+    line-height: 0;
+  }
+  .travel-text {
+    font-size: 14px;
+    padding: 3% 10%;
+  }
+  .services {
+    font-size: 16px;
+  }
+
+  /* Style subscribe */
+  .subscribe {
+    padding: 3% 0;
+    display: grid;
+    grid-template-columns: 35% 40% auto;
+    h2 {
+      font-size: 17px;
+      text-align: left;
+      margin-bottom: 0;
+      place-self: center;
+    }
+  }
+  .email {
+    margin-bottom: 0;
+    display: inline;
+    input {
+      padding-bottom: 0;
+      font-size: 14px;
+      width: 60%;
+    }
+  }
+  .send {
+    font-size: 15px;
+    padding: 0;
+    color: $white;
+    background-color: $blue;
+    margin: 0 auto;
+    font-weight: normal;
+    display: inline;
+    width: 17%;
+    cursor: pointer;
+  }
+  .subscribe-follow-us {
+    display: inherit;
+    place-self: center;
+  }
+
+  .subscribe-social-media {
+    display: -webkit-inline-box;
+    place-self: center;
+    width: 100%;
+    a {
+      text-decoration-line: none;
+    }
+    img {
+      padding-right: 15px;
+      height: 17px;
+    }
+
+    p {
+      padding-right: 8%;
+      color: $white;
+    }
+  }
+
+  /* Style footer */
+  .follow-us {
+    padding: 2%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    border-bottom: 10px solid $light-blue;
+
+    h2 {
+      display: none;
+    }
+  }
+
+  .social-media {
+    display: none;
+  }
+  .payment {
+    align-self: center;
+    img {
+      padding: 0 2%;
+      height: 20px;
+    }
+  }
+
+  .terms {
+    display: inherit;
+    color: $grey;
+    font-size: 18px;
+    place-self: end;
+
+    p {
+      padding: 0 7px;
+    }
+  }
+}
